@@ -1,0 +1,173 @@
+\documentclass[8pt, a5paper,notitlepage,openany]{report}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lscape}
+\usepackage{longtable}
+
+\usepackage{wallpaper}
+\usepackage{watermark}
+
+\usepackage[left=20mm, top=20mm, right=10mm, bottom=20mm]{geometry}
+
+\usepackage{fancybox,fancyhdr}
+\usepackage{titlesec, blindtext, color}
+\usepackage[figurename={Topos },figurewithin=none]{caption}
+
+
+\newenvironment{enumerate_my}%
+  {\begin{enumerate}%
+    \setlength{\itemsep}{1pt}%
+    \setlength{\parskip}{1pt}}%
+  {\end{enumerate}}
+
+
+\renewcommand{\thefigure}{}
+
+%\titleformat{\section}[display]
+%  {\bfseries\Large}
+%  {\filright\MakeUppercase{} \Huge\thechapher}
+%  {1ex}
+%  {\titlerule\vspace{1ex}\filleft}
+%  [\vspace{1ex}\titlerule]
+
+
+
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filcenter\MakeUppercase{} \Huge}
+  {1ex}
+  {}
+  []
+
+%\extrafloats{200}
+
+
+\graphicspath{{images/}}
+
+
+
+\begin{document}
+
+\title{DirtyAestheticsGuide}
+\date{06.07.2016}
+%\maketitle
+\tableofcontents
+\pagestyle{fancy}
+\fancyhead[R]{AREA: Triangular Lake}
+
+
+
+
+\chapter{SECTOR:Сектор ZZ}
+GPS 61.109125, 29.149561
+\fancyhead[l]{SECTOR: ZZ}
+%\section*{Routelist}
+%\input{src/zz_table}
+\newpage
+\section*{routes}
+\input{src/zz}
+
+ \clearpage 
+\chapter{SECTOR:Солнечный сектор}
+ GPS 61.112163, 29.161963
+\fancyhead[l]{SECTOR: Солнечный сектор}
+\section*{Routelist}
+%\input{src/13433_table}
+\newpage
+\section*{routes}
+\input{src/13433}
+
+
+\clearpage 
+\chapter{SECTOR:Винная карта}
+ GPS 61.108669, 29.162178
+ \fancyhead[l]{SECTOR: Винная карта}
+%\section*{Routelist}
+% \input{src/2049_table}
+ \newpage
+ \section*{routes}
+ \input{src/2049}
+ 
+
+ \clearpage 
+\chapter{SECTOR:Стоянка}
+ GPS 61.110452, 29.16501
+\fancyhead[l]{SECTOR: Стоянка}
+%\section*{Routelist}
+%\input{src/2047_table}
+\newpage
+\section*{routes}
+\input{src/2047}
+
+%\clearpage 
+\chapter{SECTOR:Развал под основным массивом.}
+ GPS 61.109954, 29.166109
+\fancyhead[l]{SECTOR: Развал под основным массивом.}
+%\section*{Routelist}
+%\input{src/2026_table}
+\newpage
+\section*{routes}
+\input{src/2026}
+
+
+\clearpage 
+\chapter{SECTOR:Mosquitos (boulder)}
+ GPS '61.114391,29.128414'
+%\fancyhead[l]{SECTOR: Mosquitos (boulder)}
+%\section*{Routelist}
+%\input{src/mosquitos-2048_table}
+%\newpage
+\section*{routes}
+\input{src/mosquitos-2048}
+
+\clearpage 
+\chapter{SECTOR:Лесной сектор}
+ GPS 61.10898, 29.166813
+\fancyhead[l]{SECTOR: Лесной сектор}
+%\section*{Routelist}
+%\input{src/9227_table}
+\newpage
+\section*{routes}
+\input{src/9227}
+
+\clearpage 
+\chapter{SECTOR:Lost World (boulder)}
+ GPS 61.124423, 29.175911
+\fancyhead[l]{SECTOR: Lost World (boulder)}
+%\section*{Routelist}
+%\input{src/lost-world-boulder_table}
+\newpage
+\section*{routes}
+\input{src/lost-world-boulder}
+
+\clearpage 
+\chapter{SECTOR:Atlantida}
+ GPS 61.089587, 29.192648
+\fancyhead[l]{SECTOR: Atlantida}
+%\section*{Routelist}
+%\input{src/atlantida_table}
+\newpage
+\section*{routes}
+\input{src/atlantida}
+ 
+\clearpage 
+\chapter{SECTOR:Бермудский треугольник}
+GPS 61.112173, 29.157715
+\fancyhead[l]{SECTOR: Бермудский треугольник}
+%\section*{Routelist}
+%\input{src/2866}
+\newpage
+\section*{routes}
+\input{src/2866}
+
+
+
+
+ \end{document}
