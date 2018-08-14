@@ -3,7 +3,7 @@
 #download all files
 cat $1 |  grep "topobox"  | sed "s/.*https/https/g; s/jpg.*/jpg /g; s/png.*/png /g" > filelist.txt
 wget -i filelist.txt
-
+rm filelist.txt
 
 
 if ! [ -d processing ]; then
@@ -33,10 +33,10 @@ echo "#!/bin/bash" > $1.print_lines.sh
      | awk '/convert/{LOCAL_COUNTER=1;} ;/draw/{ a=  $1 " "  $2 " " $3  " "$4 " " $5 "  MARKER1" LOCAL_COUNTER "MARKER2"  "\" \\" ; LOCAL_COUNTER=LOCAL_COUNTER+1 ; print a}; /huge/{print $0} ' | sed "s/MARKER1/\'/g ; s/MARKER2/\'/g" \
      | sed -e "s/convert/ \n convert  -pointsize 20 -stroke black /g" > $1.print_text.sh
 
-# rm  $1.print_text_tmp.sh
+ rm $1.print_text_tmp.sh
  mv $1.print_text.sh ./processing/
  mv $1.print_lines.sh ./processing/
-
+ 
  find . -name *.html -exec rm {} \;
 
 #source processing/$1.print_lines.sh # drawing all lines

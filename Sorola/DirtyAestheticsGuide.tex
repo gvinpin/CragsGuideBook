@@ -1,0 +1,234 @@
+\documentclass[8pt, a4paper,notitlepage,openany]{report}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lscape}
+\usepackage{longtable}
+
+\usepackage{wallpaper}
+\usepackage{watermark}
+
+\usepackage[left=20mm, top=20mm, right=10mm, bottom=20mm]{geometry}
+
+\usepackage{fancybox,fancyhdr}
+\usepackage{titlesec, blindtext, color}
+\usepackage[figurename={Topos },figurewithin=none]{caption}
+
+
+\newenvironment{enumerate_my}%
+  {\begin{enumerate}%
+    \setlength{\itemsep}{1pt}%
+    \setlength{\parskip}{1pt}}%
+  {\end{enumerate}}
+
+
+\renewcommand{\thefigure}{}
+
+%\titleformat{\section}[display]
+%  {\bfseries\Large}
+%  {\filright\MakeUppercase{} \Huge\thechapher}
+%  {1ex}
+%  {\titlerule\vspace{1ex}\filleft}
+%  [\vspace{1ex}\titlerule]
+
+
+
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filcenter\MakeUppercase{} \Huge}
+  {1ex}
+  {}
+  []
+
+%\extrafloats{200}
+
+
+\graphicspath{{images/}}
+
+
+
+\begin{document}
+
+
+
+
+
+\title{DirtyAestheticsGuide}
+\date{06.07.2016}
+%\maketitle
+\tableofcontents
+\pagestyle{fancy}
+\fancyhead[R]{AREA: Sorola}
+
+
+
+
+
+
+
+
+\chapter{SECTOR:  Атланты}
+\fancyhead[l]{SECTOR: Атланты}
+\section*{Routelist}
+\input{src/16171_table}
+\newpage
+\section*{routes}
+\input{src/16171}
+
+
+
+
+\chapter{SECTOR:  Треугольники}
+\fancyhead[l]{SECTOR:  Треугольники}
+\section*{Routelist}
+\input{src/16172_table}
+\newpage
+\section*{routes}
+\input{src/16172}
+
+
+\chapter{SECTOR:  Джунгли}
+\fancyhead[l]{SECTOR:  Джунгли}
+\section*{Routelist}
+\input{src/16184_table}
+\newpage
+\section*{routes}
+\input{src/16184}
+
+
+\chapter{SECTOR: Парус}
+\fancyhead[l]{SECTOR: Парус}
+\section*{Routelist}
+\input{src/16185_table}
+\newpage
+\section*{routes}
+\input{src/16185}
+
+
+
+
+\chapter{SECTOR: Ладожская сказка}
+\fancyhead[l]{SECTOR: Ладожская сказка}
+\section*{Routelist}
+\input{src/16186_table}
+\newpage
+\section*{routes}
+\input{src/16186}
+
+\chapter{SECTOR: Опера}
+\fancyhead[l]{SECTOR: Опера}
+\section*{Routelist}
+\input{src/16188_table}
+\newpage
+\section*{routes}
+\input{src/16188}
+
+
+
+
+\chapter{SECTOR: Полтинник}
+\fancyhead[l]{SECTOR: Полтинник}
+\section*{Routelist}
+\input{src/16189_table}
+\newpage
+\section*{routes}
+\input{src/16189}
+
+\chapter{SECTOR: сектор Red Fox}
+\fancyhead[l]{SECTOR: сектор Red Fox}
+\section*{Routelist}
+\input{src/red-fox_table}
+\newpage
+\section*{routes}
+\input{src/red-fox}
+
+
+\chapter{SECTOR: боулдер-стенка Фрёкен-в-Бок}
+\fancyhead[l]{SECTOR: боулдер-стенка Фрёкен-в-Бок}
+\section*{Routelist}
+\input{src/19307_table}
+\newpage
+\section*{routes}
+\input{src/19307}
+
+
+
+
+\chapter{SECTOR: Адский курумник}
+\fancyhead[l]{SECTOR: Адский курумник}
+\section*{Routelist}
+\input{src/19309_table}
+\newpage
+\section*{routes}
+\input{src/19309}
+
+
+
+\chapter{SECTOR: Стена Аллигатора}
+\fancyhead[l]{SECTOR: Стена Аллигатора}
+\section*{Routelist}
+\input{src/19503_table}
+\newpage
+\section*{routes}
+\input{src/19503}
+
+
+
+\chapter{SECTOR: Логово дракона}
+\fancyhead[l]{SECTOR: Логово дракона}
+\section*{Routelist}
+\input{src/22399_table}
+\newpage
+\section*{routes}
+\input{src/22399}
+
+
+
+
+\chapter{SECTOR: сектор Кин-Дза-Дза}
+\fancyhead[l]{SECTOR: сектор Кин-Дза-Дза}
+\section*{Routelist}
+\input{src/kin-dza-dza_table}
+\newpage
+\section*{routes}
+\input{src/kin-dza-dza}
+
+
+
+\chapter{SECTOR: Наутилус}
+\fancyhead[l]{SECTOR: Наутилус}
+\section*{Routelist}
+\input{src/20985_table}
+\newpage
+\section*{routes}
+\input{src/20985}
+
+
+
+\chapter{SECTOR: сектор Воспоминания}
+\fancyhead[l]{SECTOR: сектор Воспоминания}
+\section*{Routelist}
+\input{src/20986_table}
+\newpage
+\section*{routes}
+\input{src/20986}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ \end{document}

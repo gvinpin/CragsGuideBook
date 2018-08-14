@@ -1,0 +1,166 @@
+\documentclass[8pt, a4paper,notitlepage,openany]{report}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lscape}
+\usepackage{longtable}
+
+\usepackage{wallpaper}
+\usepackage{watermark}
+
+\usepackage[left=20mm, top=20mm, right=10mm, bottom=20mm]{geometry}
+
+\usepackage{fancybox,fancyhdr}
+\usepackage{titlesec, blindtext, color}
+\usepackage[figurename={Topos },figurewithin=none]{caption}
+
+
+\newenvironment{enumerate_my}%
+  {\begin{enumerate}%
+    \setlength{\itemsep}{1pt}%
+    \setlength{\parskip}{1pt}}%
+  {\end{enumerate}}
+
+
+\renewcommand{\thefigure}{}
+
+%\titleformat{\section}[display]
+%  {\bfseries\Large}
+%  {\filright\MakeUppercase{} \Huge\thechapher}
+%  {1ex}
+%  {\titlerule\vspace{1ex}\filleft}
+%  [\vspace{1ex}\titlerule]
+
+
+
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filcenter\MakeUppercase{} \Huge}
+  {1ex}
+  {}
+  []
+
+%\extrafloats{200}
+
+
+\graphicspath{{images/}}
+
+
+
+\begin{document}
+
+
+
+
+
+\title{DirtyAestheticsGuide}
+\date{06.07.2016}
+%\maketitle
+\tableofcontents
+\pagestyle{fancy}
+\fancyhead[R]{AREA: Triangular Lake}
+
+
+
+
+
+
+\chapter{Схема}
+ \begin{figure}[h] \center{\includegraphics[width=1\linewidth] {huge-601c42e1720f.png} }
+\end{figure}
+
+
+
+
+
+\chapter{SECTOR: И-ту}
+\fancyhead[l]{SECTOR: И-ту}
+\section*{Routelist}
+\input{src/17080_table}
+\newpage
+\section*{routes}
+\input{src/17080}
+
+\chapter{SECTOR: Смешарики}
+\fancyhead[l]{SECTOR: Смешарики}
+\section*{Routelist}
+\input{src/pinch-17351_table}
+\newpage
+\section*{routes}
+\input{src/pinch-17351}
+
+
+\chapter{SECTOR: Даву}
+\fancyhead[l]{SECTOR: Даву}
+\section*{Routelist}
+\input{src/17353_table}
+\newpage
+\section*{routes}
+\input{src/17353}
+
+
+\chapter{SECTOR: Шило}
+\fancyhead[l]{SECTOR: Шило}
+\section*{Routelist}
+\input{src/17348_table}
+\newpage
+\section*{routes}
+\input{src/17348}
+
+
+
+
+\chapter{SECTOR: Малыш}
+\fancyhead[l]{SECTOR: Малыш}
+\section*{Routelist}
+\input{src/koshako_table}
+\newpage
+\section*{routes}
+\input{src/koshako}
+
+\chapter{SECTOR: Ацтек}
+\fancyhead[l]{SECTOR: Ацтек}
+\section*{Routelist}
+\input{src/raggae_table}
+\newpage
+\section*{routes}
+\input{src/raggae}
+
+
+
+
+\chapter{SECTOR: Правый дубль}
+\fancyhead[l]{SECTOR: Правый дубль}
+\section*{Routelist}
+\input{src/15670_table}
+\newpage
+\section*{routes}
+\input{src/15670}
+
+\chapter{SECTOR: Левый дубль}
+\fancyhead[l]{SECTOR: Левый дубль}
+\section*{Routelist}
+\input{src/15668_table}
+\newpage
+\section*{routes}
+\input{src/15668}
+
+
+\chapter{SECTOR: Крыша}
+\fancyhead[l]{SECTOR: Крыша}
+\section*{Routelist}
+\input{src/15669_table}
+\newpage
+\section*{routes}
+\input{src/15669}
+
+
+
+
+ \end{document}

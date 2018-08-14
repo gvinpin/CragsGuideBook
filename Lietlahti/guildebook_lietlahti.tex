@@ -1,0 +1,412 @@
+\documentclass[8pt, a5paper,notitlepage,openany]{report}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lscape}
+%\usepackage{wallpaper}
+%\usepackage{watermark}
+\usepackage[left=20mm, top=20mm, right=10mm, bottom=20mm]{geometry}
+\usepackage{fancybox,fancyhdr}
+\usepackage{titlesec, blindtext, color}
+\usepackage[figurename={Topos },figurewithin=none]{caption}
+\usepackage{longtable}
+
+\usepackage[pages=some]{background}
+
+\newenvironment{enumerate_my}%
+  {\begin{enumerate}%
+    \setlength{\itemsep}{1pt}%
+    \setlength{\parskip}{1pt}}%
+  {\end{enumerate}}
+
+\renewcommand{\thefigure}{}
+
+
+%\titleformat{\section}[display]
+%  {\bfseries\Large}
+%  {\filright\MakeUppercase{} \Huge\thechapher}
+%  {1ex}
+ % {\titlerule\vspace{1ex}\filleft}
+ % [\vspace{1ex}\titlerule]
+
+
+
+%\titleformat{\chapter}[display]
+%  {\bfseries\Large}
+%  {\filcenter\MakeUppercase{} \Huge}
+%  {1ex}
+%  {}
+%  []
+
+%\extrafloats{200}
+
+
+\titleformat{\chapter}[display]
+ {\bfseries\Large}
+ {\filcenter\MakeUppercase{AREA } \thechapter}
+  {1ex}
+  {\titlerule\vspace{1ex}\filcenter}
+  [\vspace{1ex}\titlerule]
+  
+ 
+\graphicspath{{images/}}
+
+
+
+
+
+\begin{document}
+
+%\CenterWallPaper{1}{bg444}
+
+\title{DirtyAestheticsGuide}
+\date{06.07.2016}
+\author{sergey manukhin}
+
+
+\pagestyle{fancy}
+\tableofcontents
+
+
+\chapter{ VUOROMÄKI}
+\fancyhead[R]{AREA VUOROMÄKI}
+\section{kellari}
+ GPS '61.114173,29.129529'
+\fancyhead[l]{Topos:kellari}
+\subsection{Routelist}
+\input{tex/kellari_table}
+\subsection{Routes}
+\input{tex/kellari}
+
+\clearpage 
+\section{jussla}
+ GPS '61.113883,29.127096'
+\fancyhead[l]{topos:jussla}
+\subsection{Routelist}
+\input{tex/jussla_table}
+\newpage
+\subsection{Routes}
+\input{tex/jussla}
+
+
+% 
+\clearpage 
+ \section{Vuorelа}
+  GPS '61.114008,29.129416'
+ \fancyhead[l]{topos:Vuorelа}
+\subsection{Routelist}
+\input{tex/new-boulder-2}
+\newpage
+\subsection{Routes}
+\input{tex/new-boulder-2}
+% 
+\clearpage 
+\section{Lahteela}
+ GPS '61.113799,29.12956'
+\fancyhead[l]{topos:Lahteela}
+\subsection{Routelist}
+\input{tex/new-boulder-19001_table}
+\newpage
+\subsection{Routes}
+\input{tex/new-boulder-19001}
+
+
+
+%   
+\clearpage 
+\section{Vuoromäki домашний}
+ GPS '61.112746,29.130437'
+\fancyhead[l]{topos:Vuoromäki домашний}
+%\begin{landscape}
+\subsection{Routelist}
+\input{tex/sector-1-16898_table}
+\newpage
+
+\subsection{Routes}
+
+  
+\input{tex/sector-1-16898}
+
+
+%\end{landscape}
+
+\clearpage 
+\section{Vuoromäki лес}
+ GPS '61.114391,29.128414'
+\fancyhead[l]{topos:Vuoromäki лес}
+\subsection{Routelist}
+\input{tex/vuoromaki_table}
+\newpage
+\subsection{Routes}
+\input{tex/vuoromaki}
+
+\clearpage 
+\section{Vuoromäki каменоломня}
+ GPS '61.113666,29.13027'
+\fancyhead[l]{Vuoromäki каменоломня}
+\subsection{Routelist}
+\input{tex/vuoromaki-16901_table}
+\newpage
+\subsection{Routes}
+  
+\input{tex/vuoromaki-16901}
+
+
+\chapter{AITTAMÄKI}
+\fancyhead[R]{AREA AITTAMÄKI}
+\section{aittamaki-1}
+ GPS '61.113542,29.131531'
+\fancyhead[l]{topos:aittamaki-1}
+\subsection{Routelist}
+\input{tex/aittamaki-1_table}
+\newpage
+\subsection{Routes}
+\input{tex/aittamaki-1}
+
+\clearpage 
+\section{aittamaki-2}
+ GPS '61.11635,29.13189'
+\fancyhead[l]{topos:aittamaki-2}
+\subsection{Routelist}
+
+\input{tex/aittamaki-2_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/aittamaki-2}
+ 
+\clearpage 
+\section{aittamaki-3}
+  GPS '61.113907,29.13151'
+ \fancyhead[l]{topos:aittamaki-3}
+\subsection{Routelist}
+\input{tex/aittamaki-3_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/aittamaki-3}
+
+
+ \clearpage 
+ \chapter{PALOMÄKI}
+ \fancyhead[R]{AREA PALOMÄKI}
+ \section{Palomäki}
+   GPS '61.116361,29.125357'
+  \fancyhead[l]{topos:Palomäki}
+\subsection{Routelist}
+\input{tex/palomaki_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/palomaki}
+
+
+ \clearpage
+\section{Harjula}
+ GPS '61.118732,29.124936'
+\fancyhead[l]{topos:Harjula}
+\subsection{Routelist}
+\input{tex/harjula_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/harjula} 
+
+ \clearpage
+  \section{Mustamäki}
+ GPS '61.117563,29.136643'
+\fancyhead[l]{topos:Mustamäki}
+\subsection{Routelist}
+\input{tex/mustamaki_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/mustamaki}
+  
+  
+    
+  
+ 
+
+ \chapter{ INKORPI}
+  \fancyhead[R]{AREA INKORPI}
+ \section{Шляпа}
+ GPS '61.123686,29.120505'
+\fancyhead[l]{topos:Шляпа}
+\subsection{Routelist}
+\input{tex/20296_table}
+\newpage
+\subsection{Routes}
+\input{tex/20296}
+
+
+
+\clearpage
+ \section{Inkorpi}
+ GPS '61.123947,29.119598'
+\fancyhead[l]{topos:Inkorpi}
+\subsection{Routelist}
+\input{tex/inkorpi_table}
+\newpage
+\subsection{Routes}
+\input{tex/inkorpi}
+
+\clearpage
+ \section{Черепашка}
+ GPS '61.124195,29.11822'
+\fancyhead[l]{topos:Черепашка}
+\subsection{Routelist}
+\input{tex/boulder-8-19255_table}
+\newpage
+\subsection{Routes}
+\input{tex/boulder-8-19255}
+
+\clearpage
+ \section{Ёжик}
+ GPS '61.123824,29.120043'
+\fancyhead[l]{topos:Ёжик}
+\subsection{Routelist}
+\input{tex/20210_table}
+\newpage
+\subsection{Routes}
+\input{tex/20210 }
+
+\clearpage
+ \section{Тролль}
+ GPS '61.124847,29.118503'
+\fancyhead[l]{topos:Тролль}
+\subsection{Routelist}
+\input{tex/20291_table}
+\newpage
+\subsection{Routes}
+\input{tex/20291}
+
+\clearpage
+ \section{Palomäki}
+ GPS '61.124836,29.117651'
+\fancyhead[l]{topos:Северное сияние}
+\subsection{Routelist}
+\input{tex/20292_table}
+\newpage
+\subsection{Routes}
+
+\input{tex/20292}
+
+\clearpage
+ \section{Пингвин}
+ GPS '61.126092,29.118853'
+\fancyhead[l]{topos:Пингвин}
+\subsection{Routelist}
+\input{tex/20334_table}
+\newpage
+\subsection{Routes}
+\input{tex/20334}
+
+\clearpage
+ \section{Hanuman}
+ GPS '61.124071,29.116675'
+\fancyhead[l]{topos:Hanuman}
+\subsection{Routelist}
+\input{tex/hanuman_table}
+\newpage
+\subsection{Routes}
+\input{tex/hanuman}
+
+\clearpage
+ \section{Bigfoot}
+ GPS '61.126092,29.118853'
+\fancyhead[l]{topos:Bigfoot}
+\subsection{Routelist}
+\input{tex/bigfoot_table}
+\newpage
+\subsection{Routes}
+\input{tex/bigfoot}
+
+\clearpage
+ \section{Гном}
+ GPS '61.124844,29.118576'
+\fancyhead[l]{topos:Гном}
+\subsection{Routelist}
+\input{tex/22755_table}
+\newpage
+\subsection{Routes}
+\input{tex/22755}
+
+
+ \chapter{ JÄRVEN LIETLAHTI}
+  \fancyhead[R]{AREA JÄRVEN LIETLAHTI}
+ 
+  \section{Master's Dream}
+ GPS '61.091403,29.143511'
+\fancyhead[l]{topos:Master's Dream}
+\subsection{Routelist}
+\input{tex/master-s-dream_table}
+\newpage
+\subsection{Routes}
+\input{tex/master-s-dream}
+
+\clearpage
+ \section{Karelian Diamond}
+ GPS '61.090438,29.146021'
+\fancyhead[l]{topos:Karelian Diamond}
+\subsection{Routelist}
+\input{tex/new-boulder-19001_table}
+\newpage
+\subsection{Routes}
+\input{tex/new-boulder-19001 }
+
+\clearpage
+ \section{Thunderstorm}
+ GPS '61.089627,29.146083'
+\fancyhead[l]{topos:Thunderstorm}
+\subsection{Routelist}
+\input{tex/name_table}
+\newpage
+\subsection{Routes}
+\input{tex/name}
+
+\clearpage
+
+
+\chapter{ MOKLAMÄKI}
+\fancyhead[R]{AREA MOKLAMÄKI}
+\section{Moklamäki}
+ GPS '61.101375,29.115669'
+\fancyhead[l]{topos:Moklamäki}
+\subsection{Routelist}
+\input{tex/22251_table}
+\newpage
+\subsection{Routes}
+\input{tex/22251}
+
+\clearpage
+ \section{Mustaniemi}
+ GPS '61.101375,29.115669'
+\fancyhead[l]{topos:Mustaniemi}
+\subsection{Routelist}
+\input{tex/22250_table}
+\newpage
+\subsection{Routes}
+\input{tex/22250}
+
+\clearpage
+ \section{Hietaniemi}
+ GPS '61.098029,29.118109'
+\fancyhead[l]{topos:Hietaniemi}
+\subsection{Routelist}
+\input{tex/1-18984_table}
+\newpage
+\subsection{Routes}
+\input{tex/1-18984}
+
+  
+% 
+
+
+ \end{document}

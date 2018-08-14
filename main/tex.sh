@@ -11,8 +11,9 @@
 #echo "chapter $1 ">> $1.tex
 
 #echo "ffff">__gide.tex
-cat $1 | sed -nf create_tex.sed >> $1.tex
-echo " \end{enumerate} \end{figure}  " >> $1.tex
+echo "MARKER1" > $1.tex
 
-#\end{document}
-#cat __gide.tex
+cat $1 | sed -nf create_tex.sed >> $1.tex
+echo " \end{enumerate} \end{figure}  ">> $1.tex
+cp $1.tex ./processing/
+
